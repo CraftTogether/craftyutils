@@ -1,0 +1,6 @@
+name: CraftyUtils
+version: '${version}'
+main: xyz.crafttogether.craftyutils.CraftyUtils
+api-version: 1.18
+depend:
+  - CraftCore
