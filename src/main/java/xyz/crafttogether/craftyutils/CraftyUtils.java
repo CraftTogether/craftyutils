@@ -5,6 +5,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import xyz.crafttogether.craftyutils.commands.SpawnCommand;
 
 public class CraftyUtils extends JavaPlugin {
     private static final Logger logger = LoggerFactory.getLogger(CraftyUtils.class);
@@ -13,6 +14,7 @@ public class CraftyUtils extends JavaPlugin {
     @Override
     public void onEnable() {
         Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "CraftyUtils enabled");
+        getCommand("spawn").setExecutor(new SpawnCommand());
         plugin = this;
     }
 

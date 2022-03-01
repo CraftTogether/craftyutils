@@ -4,3 +4,7 @@ main: xyz.crafttogether.craftyutils.CraftyUtils
 api-version: 1.18
 depend:
   - CraftCore
+commands:
+  spawn:
+    description: Teleport you back to spawn
+    usage: /<command>
