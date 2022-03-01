@@ -11,13 +11,13 @@ public class CraftyUtils extends JavaPlugin {
     private static JavaPlugin plugin;
 
     @Override
-    public void onDisable() {
-        plugin = this;
+    public void onEnable() {
         Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "CraftyUtils enabled");
+        plugin = this;
     }
 
     @Override
-    public void onEnable() {
+    public void onDisable() {
         Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "CraftyUtils disabled");
     }
 
